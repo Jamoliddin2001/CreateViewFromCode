@@ -3,10 +3,7 @@ package tj.jamoliddin.viewfromcode
 import android.graphics.Color
 import android.os.Bundle
 import android.view.ViewGroup
-import android.widget.EditText
-import android.widget.FrameLayout
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -40,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         paramsEditText.weight = 1f
         e.layoutParams = paramsEditText
         e.hint = "Type new Task"
+        e.setBackgroundColor(Color.YELLOW)
 
 
         // TextView
@@ -49,9 +47,21 @@ class MainActivity : AppCompatActivity() {
         t.layoutParams = paramsTextView
         t.text = "TextView"
         t.setTextColor(Color.GREEN)
+        t.setBackgroundColor(Color.RED)
+
+        // Button
+        val b = Button(applicationContext)
+        val paramsButton = LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT)
+        paramsButton.weight = 1f
+        b.layoutParams = paramsButton
+        b.text = "Button"
+        b.setBackgroundColor(Color.BLUE)
+
+
 
         l.addView(e)
         l.addView(t)
+        l.addView(b)
 
         content.addView(l)
 
