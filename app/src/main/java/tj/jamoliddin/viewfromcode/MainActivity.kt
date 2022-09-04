@@ -54,10 +54,20 @@ class MainActivity : AppCompatActivity() {
         b.setBackgroundColor(Color.BLUE)
 
 
+        // Button
+        val b2 = Button(applicationContext)
+        val paramsNewButton = LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT)
+        paramsButton.weight = 1f
+        b2.layoutParams = paramsButton
+        b2.text = "newButton"
+        b2.setBackgroundColor(Color.MAGENTA)
+
+
 
         l.addView(e)
         l.addView(t)
         l.addView(b)
+        l.addView(b2)
 
         content.addView(l)
 
