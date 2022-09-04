@@ -17,8 +17,6 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         content = findViewById(R.id.content)
 
-
-        //rootView
         //rootView
         val l = LinearLayout(applicationContext)
         val params = LinearLayout.LayoutParams(
@@ -28,8 +26,6 @@ class MainActivity : AppCompatActivity() {
         params.setMargins(100, 100, 100, 100)
         l.layoutParams = params
         l.orientation = LinearLayout.HORIZONTAL
-
-        //EditText view
 
         //EditText view
         val e = EditText(applicationContext)
