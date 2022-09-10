@@ -70,7 +70,8 @@ class MainActivity : AppCompatActivity() {
         l.addView(t)
         l.addView(b)
         l.addView(b2)
-        /*val l = LinearLayout(applicationContext)
+        /* LinearLayout
+        val l = LinearLayout(applicationContext)
         val params = LinearLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT,
             ViewGroup.LayoutParams.WRAP_CONTENT
