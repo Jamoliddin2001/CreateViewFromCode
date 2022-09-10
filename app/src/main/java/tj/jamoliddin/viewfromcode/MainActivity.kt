@@ -64,10 +64,32 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
+
         l.addView(e)
         l.addView(t)
         l.addView(b)
         l.addView(b2)
+        /*val l = LinearLayout(applicationContext)
+        val params = LinearLayout.LayoutParams(
+            FrameLayout.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT
+        )
+        params.setMargins(10, 10, 10, 10)
+        l.layoutParams = params
+        l.orientation = LinearLayout.VERTICAL
+
+        // TextView
+        val t = TextView(applicationContext)
+
+        val paramsEditText = LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT)
+        paramsEditText.weight = 1f
+        t.layoutParams = paramsEditText
+        t.text = "Type new Task"
+        t.setTextColor(Color.RED)
+
+        l.addView(t)*/
+
 
         content.addView(l)
 

@@ -2,5 +2,6 @@ package tj.jamoliddin.viewfromcode
 
 fun main(){
     val a = 5
-    print("Hello, world!")
+    val b = 10
+    print(a+b)
 }
